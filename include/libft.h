@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kixik   <github.com/kixikCodes>            +#+  +:+       +#+        */
+/*   By: kixik <kixik@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 10:48:54 by kixik             #+#    #+#             */
-/*   Updated: 2025/03/13 19:05:52 by kixik            ###   ########.fr       */
+/*   Updated: 2026/01/30 18:56:03 by kixik            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,6 +49,7 @@
 typedef struct s_list_node
 {
 	void				*content;
+    struct s_list_node  *prev;
 	struct s_list_node	*next;
 }	t_list_node;
 
@@ -123,6 +124,7 @@ t_list_node	*ft_lstmap(t_list_node *lst, void *(*f)(void *),
 				void (*del)(void *));
 
 // ft_fprintf implementation (used to be only printf)
+int			ft_printf(const char *str, ...);
 int			ft_fprintf(int fd, const char *str, ...);
 
 // get_next_line implementation

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kixik   <github.com/kixikCodes>            +#+  +:+       +#+        */
+/*   By: kixik <kixik@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 11:01:32 by kixik             #+#    #+#             */
-/*   Updated: 2024/10/17 18:02:29 by kixik            ###   ########.fr       */
+/*   Updated: 2026/01/30 18:55:07 by kixik            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,6 +65,18 @@ static int	*format_parse(int fd, const char *str, va_list args, int *retval)
 		}
 		str++;
 	}
+	return (retval);
+}
+
+int	ft_printf(const char *str, ...)
+{
+	va_list	args;
+	int		retval;
+
+	retval = 0;
+	va_start(args, str);
+	retval = *format_parse(STDOUT_FILENO, str, args, &retval);
+	va_end(args);
 	return (retval);
 }
 

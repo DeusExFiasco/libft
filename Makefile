@@ -26,7 +26,7 @@ MEM_DIR = $(SRC_DIR)/memory
 STR_DIR = $(SRC_DIR)/strings
 LIST_DIR = $(SRC_DIR)/linked_lists_bonus
 WRITING_DIR = $(SRC_DIR)/writing
-PRINT_DIR = $(SRC_DIR)/ft_fprintf
+PRINT_DIR = $(SRC_DIR)/ft_printf
 GNL_DIR = $(SRC_DIR)/get_next_line
 GC_DIR = $(SRC_DIR)/garbage_collector
 
@@ -45,7 +45,7 @@ LIST_SRC = ft_lstadd_back_bonus.c ft_lstdelone_bonus.c ft_lstmap_bonus.c \
 		   ft_lstadd_front_bonus.c ft_lstiter_bonus.c ft_lstnew_bonus.c \
 		   ft_lstclear_bonus.c ft_lstlast_bonus.c ft_lstsize_bonus.c
 WRITING_SRC = ft_putchar_fd.c ft_putnbr_fd.c ft_putendl_fd.c ft_putstr_fd.c
-PRINT_SRC = ft_fprintf.c handle_dec.c handle_int.c handle_str.c handle_char.c \
+PRINT_SRC = ft_printf.c handle_dec.c handle_int.c handle_str.c handle_char.c \
 			handle_hex.c handle_point.c hex_functions.c
 GNL_SRC = get_next_line.c get_next_line_utils.c
 

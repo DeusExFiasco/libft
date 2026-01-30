@@ -2,7 +2,7 @@
 
 ***This is my custom libft that I use in 42 projects!***
 
-It contains all of the functions in the *mandatory and bonus* parts of the libft project, as well as a modified version of my *ft_fprintf* (like ft_printf but with a given fd) and my implementation of *get_next_line*. It also now has a *garbage collector*!
+It contains all of the functions in the *mandatory and bonus* parts of the libft project, as well as my ft_printf/ft_fprintf and my implementation of *get_next_line*. It also now has a (kind of) *garbage collector*!
 
 ### Included Standard C Libraries
 
